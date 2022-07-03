@@ -1,6 +1,6 @@
-# Cardinal Staking UI
+# Grape Staking UI powerd by Cardinal
 
-This repository hosts the UI inteface that powers **https://stake.cardinal.so** for staking NFTs on Solana.
+This repository hosts the inteface that powers **https://grapestake.vercel...** for staking NFTs on Solana.
 
 Use this repo to create and deploy stake pools with built-in reward distribution, or build your own custom interface with our underlying staking protocol.
 
@@ -116,15 +116,5 @@ export type StakePoolMetadata = {
 In `api/mapping.ts`, add your own object to the stakePoolMetadatas array. You'll now be able to access your project at http://localhost:3000/[name].
 
 In order to get a custom Cardinal URL, **deploy your pool** on mainnet and then **make a PR** to our `api/mapping.ts` file in this repo with updates containing your pool's metadata.
-
-### Deployment and Beyond
-
-Now that you've made and deployed your Cardinal stake pool, you can either stick with Cardinal's UX for the stake pool experience or build your own.
-
-Simply modify `pages/[stakePoolId]/index.tsx` with your own react styling, and host the stake pool on your own domain.
-
-## Have questions?
-
-Join our **[Discord](https://discord.gg/stX2FAYbVq)** to get technical support as you build on Cardinal.
 
 ---
