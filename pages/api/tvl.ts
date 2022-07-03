@@ -58,7 +58,7 @@ const get: NextApiHandler<GetResponse> = async (req, res) => {
           )
           continue
         }
-
+        
         await sleep(1)
         console.log(`Fetching collection floor price`)
         resp = await fetch(

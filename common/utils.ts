@@ -39,8 +39,8 @@ export function metadataUrl(
   pubkey: PublicKey | null | undefined,
   cluster: string
 ) {
-  if (!pubkey) return 'https://www.magiceden.io/item-details/'
-  return `https://www.magiceden.io/item-details/${pubkey.toString()}${
+  if (!pubkey) return 'https://grape.art/'
+  return `https://grape.art/preview/${pubkey.toString()}${
     cluster === 'devnet' ? '?cluster=devnet' : ''
   }`
 }
